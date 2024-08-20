@@ -18,12 +18,12 @@ A string of characters will be called a `word` if it belongs to some english dic
 Once we find a `word` we place it aside and continue generating strings.  
 Once we have enough[^3] words to produce a syntactically correct sentence we place it inside the body of our `poem` as a generated line.
 
-We shall not trouble ourselves with semantics, so for instance `[Colorless green ideas sleep furiously](https://plato.stanford.edu/entries/category-mistakes/)` will be considered a correct sentence for the goals of this project.
+We shall not trouble ourselves with semantics, so for instance [Colorless green ideas sleep furiously](https://plato.stanford.edu/entries/category-mistakes/) will be considered a correct sentence for the goals of this project.
 
 [^1]:
     Our map is naive. We subdivide the unit interval `[0,1]` equally into 26 sections, one for each letter.  
     Each price value first gets normalized to the unit range and then is assigned a letter depending on the sub-interval it belongs to.
 
-[^2]: We will use the following dictionaries to check for words:
+[^2]: We will use a client-side implementation to lookup words. TODO
 
 [^3]: We will pick a number, `3 <= x <= 10`, at random in order to decide the length of each line.
